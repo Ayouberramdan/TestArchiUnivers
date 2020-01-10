@@ -130,7 +130,7 @@ form{
 }
 
 /* Resolution pour telephone */
-@media(max-width:630px){
+@media only screen and (max-width:630px){
 
   /* .button{
     position: fixed;

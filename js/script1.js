@@ -3,7 +3,7 @@
 
 
 // contole fenetre modale
-document.getElementById('button').style.display = "flex";
+document.getElementById('button').style.display = "block";
 document.getElementById('button').addEventListener("click", function() {
    document.querySelector('.bg-modal').style.display = "flex";
    document.getElementById('button').style.display = "none";
@@ -11,7 +11,12 @@ document.getElementById('button').addEventListener("click", function() {
 
 document.querySelector('.close').addEventListener("click", function() {
    document.querySelector('.bg-modal').style.display = "none";
-   document.getElementById('button').style.display = "flex";
+   document.getElementById('button').style.display = "block";
+});
+
+document.getElementById('annuler').addEventListener("click", function() {
+   document.querySelector('.bg-modal').style.display = "none";
+   document.getElementById('button').style.display = "block";
 });
 
 // controle les formes
