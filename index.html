@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Finense</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/style1.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+
+</head>
+<body>
+	<!--NAVBAR-->
+	<div class="header">
+		<div class="nav1">
+			<div class="logo1">
+				<img src="img/logo1.png">
+			</div>	
+			<div class="menu1">	
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/tabbord.png">
+							<h4>TABLEAU DE BORD</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/compte.png">
+							<h4>COMPTES</h4>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/membre.png">
+							<h4>MEMBRES</h4>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="profil">
+				<a href="#">
+					<img src="img/profil1.png">
+				</a>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!--MEMBRE CLASS-->
+	<div class="contenu1">
+		<div class="logo">
+			<img src="img/Logo - Couleur@-2.png">
+		</div>		
+		<h3>
+			MEMBRES
+		</h3>
+		<div class="profil1">
+			<a href="#">
+				<img src="img/profil1.png">
+			</a>	
+		</div>
+	</div>
+
+		
+	<div class="add1">
+		<button type="button" id="button">
+			<ion-icon name="add"></ion-icon>				 	
+				AJOUTER
+		</button>
+
+		<!--MODALE-->
+		<div class="bg-modal">
+            <div class="modal-content" id="modal1">
+                <div class="titre">
+                	<p>AJOUTER UN MOMBRE</p>
+                	<div class="close">+</div>
+                </div>
+                <div class="info">
+                    <p>Vous avez droit a deux mombres supplémentaires</p>
+                </div>
+                <form onsubmit="return verifForm(this)">
+                    <div class="sexe">
+                        <input type="radio" id="monsieur" value="monsieur">
+                        <label for="monsieur">monsieur</label>
+                        <input type="radio" id="madame" value="madame">
+                        <label for="madame">madame</label>
+                    </div>
+                    <div class="nom"> 
+                        <input class="textflex" type="text" id="NOM" placeholder="NOM" onblur="verifPseudo(this)"/>
+                        <input class="textflex2" type="text" id="PRENOM" placeholder="PRENOM" onblur="verifPseudo(this)"/>
+                    </div>
+                    <div class="infotext">
+                        <input class="text" type="email" id="email" placeholder="ADRESSE MAIL" onblur="verifPseudo(this)"/><br/>
+                        <input class="text" type="tel" id="tel" placeholder="MOBILE" onblur="verifPseudo(this)"/><br/>
+                        <textarea class="textnote" id="note" placeholder="NOTE"></textarea><br>
+                    </div>
+                    <div class="button">
+                        <input class="btn-annuler" type="reset" name="ANNULER" value="ANNULER">
+                        <input class="btn-enregistrer" type="submit" name="ENREGISTRER" value="ENREGISTRER">
+                    </div>
+                </form>
+            </div>
+        </div>
+			
+        <script src="js/script1.js"></script>	
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+	</body>
+</html>

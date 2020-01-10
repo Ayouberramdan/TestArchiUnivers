@@ -1,0 +1,211 @@
+
+/* stype de body */
+
+body{
+  font-family: "montserrat";
+  font-size: 10px;
+}
+
+.membres{
+  padding: 10px;
+  text-align: center;
+}
+
+.button{
+    margin: auto;
+    display: block;
+    /* margin-top: 70px; */
+}
+
+/* modal style */
+.bg-modal{
+  width: 100%;
+  height: 95%;
+  background-color: rgba(236,239,255,0.7);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  display: none;
+  /* overflow-y: hidden; */
+}
+.modal-content{
+  margin-top: 40px;
+  width: 450px;
+  height: 370px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+.titre{
+  padding: 3px;
+}
+.info{
+  background-color: #F8F8F8;
+  padding: 6px;
+}
+form{
+  text-align: left;
+  margin: 8px;
+  padding: 8px;
+}
+/* input{
+  border: 0.5px solid #aaa;
+  border-radius: 6px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+} */
+
+.text{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.textnote{
+  width: 100%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.textflex{
+  width: 47%;
+  padding: 8px 15px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.textflex2{
+  width: 52%;
+  padding: 8px 15px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sexe{
+  margin: 12px 1px;
+}
+
+.btn-annuler{
+  width: 50%;
+  padding: 8px 15px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px solid #8CCCFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-enregistrer{
+  width: 47%;
+  padding: 8px 15px;
+  margin: 9px 0;
+  display: inline-block;
+  background-color: #8CCCFF;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.close{
+  position: absolute;
+  top:0;
+  right: 14px;
+  font-size:42px ;
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+/* Resolution pour telephone */
+@media(max-width:630px){
+
+  /* .button{
+    position: fixed;
+		left: 0;
+		margin-bottom: auto;
+		width: 100%;
+		background-color:
+  } */
+
+  /* modale */
+
+  .bg-modal{
+    height: 400px;
+    display: none;
+    align-items: center;
+    margin-bottom: 30%;
+  }
+  .modal-content{
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "montserrat";
+    font-size: 10px;
+  }
+  .btn-annuler{
+    display: none;
+  }
+
+  .text{
+    padding: 12px 20px;
+  }
+  .textflex{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .textflex2{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 9px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .btn-enregistrer{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 9px 0;
+    display: inline-block;
+    background-color: #8CCCFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .sexe{
+    text-align: center;
+  }
+
+  .btn-enregistrer{
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+  .textnote{
+    display: none;
+  }
+
+}
